@@ -1,0 +1,107 @@
+/* this is where all of your CSS styles go */
+
+html,body {
+	width: 100%;
+	height: 100%;
+	background-color:white;
+	-webkit-animation: night 8s alternate infinite;
+}
+
+@font-face {
+	font-family: hoefler;
+	src: url(../fonts/hoefler.ttc);}
+
+#grid_container {
+	width: 800px;
+	height: 100px;
+	position: relative;
+	left: 41%;
+	top: 33%;
+	margin-top: -50px;
+	margin-left: -100px;
+}
+
+.mono {
+	font-family: hoefler;
+	font-size: 6em;
+	float: left;
+	margin-left: 5px;
+	position:relative;
+}
+
+@-webkit-keyframes night {
+0%,33% {background-color:white;}
+66%,100% {background-color:#0b2c60;}
+}
+
+@-webkit-keyframes a_p {
+	0% {bottom:0px; left:0px; color:#0b2c60;}
+	33% {bottom:100px; left:0px; color:#0b2c60;}
+	66% {bottom:100px; left:325px; color:white;}
+	100% {bottom:0px; left:325px; color:white;}
+}
+
+@-webkit-keyframes b_l {
+	0% {opacity:1; left:0px; color:#0b2c60;}
+	33% {opacity:0; left:0px; color:#0b2c60;}
+	50% {opacity:0; left:55px; color:white;}
+	66% {opacity:0; left:55px; color:white;}
+	100% {opacity:1; left:55px; color:white;}
+}
+
+@-webkit-keyframes c_e {
+	0% {right:0px; color:#0b2c60;}
+	33% {right:0px; color:#0b2c60;}
+	66% {right:-55px; color:white;}
+	100% {right:-55px; color:white;}
+}
+
+@-webkit-keyframes d_a {
+	0% {top:0px; right:0px; color:#0b2c60;}
+	33% {top:100px; right:0px; color:#0b2c60;}
+	66% {top:100px; right:200px; color:white;}
+	100% {top:0px; right:200px; color:white;}
+}
+
+@-webkit-keyframes e_s {
+	0% {opacity:1; left:0px; color:#0b2c60;}
+	33% {opacity:0; left:0px; color:#0b2c60;}
+	50% {opacity:0; left:-200px; color:white;}
+	66% {opacity:0; left:-200px; color:white;}
+	100% {opacity:1; left:-200px; color:white;}
+}
+
+@-webkit-keyframes f_e {
+	0% {right:0px; color:#0b2c60;}
+	33% {right:0px; color:#0b2c60;}
+	66% {right:70px; color:white;}
+	100% {right:70px; color:white;}
+}
+
+
+
+#a{
+	-webkit-animation: a_p 8s alternate infinite cubic-bezier(0,0,1,1);
+}
+
+#b{
+
+	-webkit-animation: b_l 8s alternate infinite cubic-bezier(.81,.01,.27,.99);
+}
+
+#c{
+	-webkit-animation: c_e 8s alternate infinite cubic-bezier(0,0,1,1);
+}
+
+#d{
+	-webkit-animation: d_a 8s alternate infinite cubic-bezier(0,0,1,1);	
+}
+
+
+#e{
+	-webkit-animation: e_s 8s alternate infinite cubic-bezier(.81,.01,.27,.99);
+}
+
+#f{
+	-webkit-animation: f_e 8s alternate infinite cubic-bezier(0,0,1,1);
+}
